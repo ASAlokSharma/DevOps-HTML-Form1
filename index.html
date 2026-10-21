@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f8; display: flex; justify-content: center; padding: 40px; }
+    form { background: #fff; padding: 24px 28px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.1); width: 340px; }
+    h2 { margin-top: 0; }
+    label { display: block; margin: 14px 0 4px; font-weight: bold; }
+    input { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 20px; width: 100%; padding: 10px; background: #2d6cdf; color: #fff; border: 0; border-radius: 4px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #1f55b8; }
+  </style>
+</head>
+<body>
+  <form id="contactForm" action="#" method="post">
+    <h2>Registration Form</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="contact">Contact Number</label>
+    <input type="tel" id="contact" name="contact" placeholder="10-digit number" pattern="[0-9]{10}" required>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
