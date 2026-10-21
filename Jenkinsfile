@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ASAlokSharma/DevOps-HTML-Form1.git'
+                retry(3) {
+                    checkout scm
+                }
             }
         }
 
